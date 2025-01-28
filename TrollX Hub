@@ -1,26 +1,26 @@
 wait(0.1)
 game.StarterGui:SetCore("SendNotification", {
     Title = "جارِ تحميل سكربت ";
-    Text = "سكربت المطور TrollX"; -- ARAB TEAM
+    Text = "سكربت المطور TrollX + 7RC"; -- ARAB TEAM
     Duration = 5;
 })
 
 wait(0.1)
 game.StarterGui:SetCore("SendNotification", {
     Title = "لحظه من فضلك";
-    Text = "سكربت المطور TrollX"; -- ARAB TEAM
+    Text = "سكربت المطورين TrollX + 7RC"; -- ARAB TEAM
     Duration = 5;
 })
 
 wait(0.1)
 game.StarterGui:SetCore("SendNotification", {
-    Title = "تم البرمجة من قبل TrollX";
-    Text = "تم تفعيل سكربت TrollX"; -- ARAB TEAM
+    Title = "تم البرمجة من قبل TrollX + 7RC";
+    Text = "تم تفعيل سكربت TrollX + 7RC"; -- ARAB TEAM
     Duration = 5;
 })
 local args = {
     [1] = "RolePlayBio",
-    [2] = "☑⚜سكربت المطور TrollX⚜☑"
+    [2] = "☑⚜سكربت المطور TrollX + 7RC⚜☑"
 }
 
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServer(unpack(args))
@@ -57,7 +57,7 @@ MinimizeButton({
   StrokeColor = Color3.fromRGB(240, 240, 240)
 })
 
-local Main = MakeTab({Name = "info | معلومات"})
+local Main = MakeTab({Name = "المعلومات"})
 local Image = AddImageLabel(Main, {
   Name = "TrollX HUB THE BEST",
   Image = "rbxassetid://129498675864273"
@@ -135,7 +135,7 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):Fire
   end
 })
 AddButton(Main, {
-  Name = "رأس العيون الزرقاء",
+  Name = "رأس ووكر الموت",
   Callback = function()
     print("Clicked")local args = {
     [1] = "CharacterChange",
@@ -174,7 +174,7 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):Fire
   end
 })
 AddButton(Main, {
-  Name = "رجل المخفية",
+  Name = "رجل المقطوعه",
   Callback = function()
     print("Clicked")local args = {
     [1] = "CharacterChange",
@@ -842,7 +842,7 @@ local function teleportToBrooksDiner()
 end
 
 AddButton(Main, {
-    Name = "قهوة | Coffe Place",
+    Name = "عند الكوفي",
     Description = "Teleporta para as coordenadas do Brooks Diner",
     Callback = teleportToBrooksDiner
 })
@@ -923,7 +923,7 @@ Name = "مكان المودلة",
     Description = "Teleporta para as coordenadas da Agência",
     Callback = teleportToAgency
 })
-local Main = MakeTab({Name = "السكربتات"})
+local Main = MakeTab({Name = "⚜️السكربتات⚜️"})
 AddButton(Main, {
   Name = "سكربت الجودة",
   Callback = function()
@@ -1064,11 +1064,11 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServ
 })
 local Main = MakeTab({Name = " ⚜البايو⚜"})
 AddButton(Main, {
-  Name = "من حبك لاشاك🗿",
+  Name = "⚜️سكربت المطور TrollX⚜️",
   Callback = function()
     local args = {
     [1] = "RolePlayBio",
-    [2] = "من حبك لاشاك🗿"
+    [2] = "⚜️سكربت المطور TrollX⚜️"
 }
  
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServer(unpack(args))
@@ -1076,11 +1076,11 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServ
   end
 })
 AddButton(Main, {
-  Name = "IRAQI",
+  Name = "⚜️فـهـودي؟⚜️",
   Callback = function()
     local args = {
     [1] = "RolePlayBio",
-    [2] = "IŘÀQÏ"
+    [2] = "⚜️فـًًٍٍُٓهـٍُٰٰوٍٍّدٍُُٰيًًٰ؟⚜️"
 }
  
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServer(unpack(args))
@@ -1262,10 +1262,10 @@ end
 
 -- Adicionando a caixa de texto para entrada do nome ou apelido do jogador
 AddTextBox(Main, {
-    Name = " دخل اول ثلاث أحرف من اسم اللاعب",
+    Name = "ادخال اول 3 أحرفمن اسم الشخص",
 
 Default = "",
-    PlaceholderText = "دخل اسم اللاعب",
+    PlaceholderText = "ادخال اسم الشخص",
     ClearText = true,
     Callback = function(value)
         if value == "" then
@@ -1416,7 +1416,7 @@ Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/Luarmor123/community-Y-HUB/refs/heads/main/Shiftlock"))()
   end
 })
-local Paragraph = AddParagraph(Main, {"مفيد"})
+local Paragraph = AddParagraph(Main, {"⚜️تفيدك ذني السوالف⚜️"})
 AddButton(Main, {
   Name = " اعاده دخول الى سيرفر",
   Callback = function()
