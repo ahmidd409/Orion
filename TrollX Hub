@@ -746,7 +746,6 @@ AddButton(Main, {
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
   	end    
 })
-
 local Main = MakeTab({Name = "⚜التنقل⚜"})
 AddButton(Main, {
   Name = "التنقل",
