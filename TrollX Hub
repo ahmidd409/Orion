@@ -82,6 +82,12 @@ AddButton(Main, {
     setclipboard('https://t.me/TrollX409')
   end
 })
+AddButton(Main, {
+  Name = "انسخ رابط سكربتي",
+  Callback = function()
+    setclipboard('loadstring(game:HttpGet("https://raw.githubusercontent.com/rwedawe/Trollx/refs/heads/main/trollx.txt"))()')
+  end
+})
 local Main = MakeTab({Name = "⚜الرؤوس الورجل⚜"})
 local Paragraph = AddParagraph(Main, {"⚜الرؤوس ⚜", "bom dia meus manos"})
 AddButton(Main, {
@@ -1071,11 +1077,11 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServ
 })
 local Main = MakeTab({Name = " ⚜البايو⚜"})
 AddButton(Main, {
-  Name = "⚜️سكربت المطور TrollX⚜️",
+  Name = "⚜️ سكربت المطور TrollX ⚜️",
   Callback = function()
     local args = {
     [1] = "RolePlayBio",
-    [2] = "⚜️سكربت المطور TrollX⚜️"
+    [2] = "⚜️ سكربت المطور TrollX ⚜️"
 }
  
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServer(unpack(args))
@@ -1088,6 +1094,18 @@ AddButton(Main, {
     local args = {
     [1] = "RolePlayBio",
     [2] = "⚜️فـًًٍٍُٓهـٍُٰٰوٍٍّدٍُُٰيًًٰ؟⚜️"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServer(unpack(args))
+ 
+  end
+})
+AddButton(Main, {
+  Name = "اسم 〔🌹〕",
+  Callback = function()
+    local args = {
+    [1] = "RolePlayBio",
+    [2] = "〔🌹〕"
 }
  
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServer(unpack(args))
