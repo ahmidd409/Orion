@@ -746,123 +746,7 @@ AddButton(Main, {
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
   	end    
 })
-end
-    end
-end)
 
--- Função para manter a câmera no jogador selecionado
-local function maintainView()
-    while wait() do
-        if viewEnabled and selectedViewPlayer then
-            local player = selectedViewPlayer
-            if player and game.Workspace.CurrentCamera.CameraSubject ~= player.Character then
-                game.Workspace.CurrentCamera.CameraSubject = player.Character
-            end
-        end
-    end
-end
-AddButton(Main, {
-  Name = "اختفاء اللاعب",
-  Callback = function()
-    local args = {
-    [1] = "CharacterSizeUp",
-    [2] = 6
-}
-game:GetService("ReplicatedStorage").RE:FindFirstChild("1Clothe1s"):FireServer(unpack(args))
-  end
-})
-AddButton(Main, {
-  Name = "إلغاء الاختفاء",
-  Callback = function()
-    local args = {
-    [1] = "CharacterSizeUp",
-    [2] = 1
-}
-
-game:GetService("ReplicatedStorage").RE:FindFirstChild("1Clothe1s"):FireServer(unpack(args))
-  end
-})
--- Variável para controlar o estado do Noclip
-local noclipEnabled = false
-local runService = game:GetService("RunService")
-
--- Função para definir CanCollide para todas as partes do personagem
-local function setCharacterCanCollide(character, canCollide)
-    for _, part in ipairs(character:GetDescendants()) do
-        if part:IsA("BasePart") then
-            part.CanCollide = canCollide
-        end
-    end
-end
-
--- Função de callback para o botão de alternância de Noclip
-local function onNoclipToggle(value)
-    noclipEnabled = value
-    print("Noclip Enabled:", noclipEnabled)
-    
-    local player = game.Players.LocalPlayer
-    local character = player.Character
-
-    if noclipEnabled then
-        -- Inicia um loop para continuamente definir CanCollide
-        noclipLoop = runService.Stepped:Connect(function()
-            if character then
-                setCharacterCanCollide(character, false)
-            end
-        end)
-    else
-        -- Desativa o loop e restaura CanCollide
-        if noclipLoop then
-            noclipLoop:Disconnect()
-        end
-        if character then
-            setCharacterCanCollide(character, true)
-        end
-    end
-end
-
--- Adiciona o botão de alternância "Noclip"
-local Toggle = AddToggle(Main, {
-    Name = " اختراق الجدار",
-
-Default = false,
-    Callback = onNoclipToggle
-})
-AddButton(Main, {
-  Name = "الطيران ",
-  Callback = function()
-  loadstring(game:HttpGet("https://raw.githubusercontent.com/IAMHIM9183/OO/refs/heads/main/fly"))()
-  end
-})
-AddButton(Main, {
-Name = "قفل الشاشة",
-Callback = function()
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/Luarmor123/community-Y-HUB/refs/heads/main/Shiftlock"))()
-  end
-})
-local Paragraph = AddParagraph(Main, {"⚜️تفيدك ذني السوالف⚜️"})
-AddButton(Main, {
-  Name = " اعاده دخول الى سيرفر",
-  Callback = function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/j2ex7NdF"))()
-  end
-})
-AddButton(Main, {
-  Name = "احذف جميع الأشياء الي بـ ايدك",
-  Callback = function()
-    local args = {
-    [1] = "ClearAllTools"
-}
-
-game:GetService("ReplicatedStorage").RE:FindFirstChild("1Clea1rTool1s"):FireServer(unpack(args))
-  end
-})
-AddButton(Main, {
-  Name = "اقتل نفسك",
-  Callback = function()
-    game.Players.LocalPlayer.Character.Humanoid.Health = 0
-  end
-})
 local Main = MakeTab({Name = "⚜التنقل⚜"})
 AddButton(Main, {
   Name = "التنقل",
@@ -884,6 +768,7 @@ pos = CFrame.new(pos.X,pos.Y,pos.Z)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos 
 
 end) 
+
 
 tool.Parent = game.Players.LocalPlayer.Backpack
   end
