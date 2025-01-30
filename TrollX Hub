@@ -1,3 +1,5 @@
+print("Loading")
+
 local sound = Instance.new("Sound")
     sound.SoundId = "rbxassetid://15689443663"
     sound.Parent = NotificationScreenGui
