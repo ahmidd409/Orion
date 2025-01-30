@@ -1,7 +1,7 @@
 print("Loading")
 
 local sound = Instance.new("Sound")
-    sound.SoundId = "rbxassetid://16190760005"
+    sound.SoundId = "rbxassetid://7817336081"
     sound.Parent = NotificationScreenGui
     sound:Play()
 
