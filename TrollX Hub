@@ -1,5 +1,4 @@
 print("Loading")
-
 local sound = Instance.new("Sound")
     sound.SoundId = "rbxassetid://7817336081"
     sound.Parent = NotificationScreenGui
@@ -1106,6 +1105,18 @@ AddButton(Main, {
     local args = {
     [1] = "RolePlayBio",
     [2] = "〔🌹〕"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServer(unpack(args))
+ 
+  end
+})
+AddButton(Main, {
+  Name = "اسم ahmad",
+  Callback = function()
+    local args = {
+    [1] = "RolePlayBio",
+    [2] = "🌑A-h-M-a-D🌑"
 }
  
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServer(unpack(args))
