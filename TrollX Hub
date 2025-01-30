@@ -665,7 +665,7 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):Fire
 
   end
 })
-local Main = MakeTab({Name = "⚜لسكن⚜"})
+local Main = MakeTab({Name = "⚜السكن⚜"})
 local Paragraph = AddParagraph(Main, {"الدمج فقط للولد"})
 local Paragraph = AddParagraph(Main, {"دمج شعر اسود حطها و حط الباقي وياه"})
 AddButton(Main, {
@@ -937,7 +937,7 @@ Name = "مكان المودلة",
 })
 local Main = MakeTab({Name = "⚜️السكربتات⚜️"})
 AddButton(Main, {
-  Name = "سكربت الجودة",
+  Name = "سكربت الشادر",
   Callback = function()
     loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Rtx-graphics-25102"))()
   end
@@ -1006,7 +1006,7 @@ AddButton(Main, {
 })
 
 AddButton(Main, {
-  Name = "سكربت شفت",
+  Name = "سكربت قفل شاشه",
   Callback = function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Sector9922/SECTOR-SHIFT-LOCK/main/SECTOR%20SHIFT%20LOCK"))()
   end
@@ -1051,7 +1051,7 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServ
 end
 })
 AddButton(Main, {
-  Name = "اسم هاك",
+  Name = "اسم هكر",
   Callback = function()
     local args = {
     [1] = "RolePlayName",
@@ -1099,6 +1099,18 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServ
  
   end
 })
+AddButton(Main, {
+  Name = "اسم صادق",
+  Callback = function()
+    local args = {
+    [1] = "RolePlayBio",
+    [2] = "< صِـآدُقَ >"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServer(unpack(args))
+ 
+  end
+}
 AddButton(Main, {
   Name = "اسم 〔🌹〕",
   Callback = function()
