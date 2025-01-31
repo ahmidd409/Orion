@@ -1,9 +1,3 @@
-print("Loading")
-local sound = Instance.new("Sound")
-    sound.SoundId = "rbxassetid://7817336081"
-    sound.Parent = NotificationScreenGui
-    sound:Play()
-
 wait(0.1)
 game.StarterGui:SetCore("SendNotification", {
     Title = "جارِ تحميل سكربت ";
